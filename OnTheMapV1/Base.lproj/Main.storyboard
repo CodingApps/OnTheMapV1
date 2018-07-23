@@ -359,10 +359,10 @@
             </objects>
             <point key="canvasLocation" x="2433" y="154"/>
         </scene>
-        <!--Onthe Map Tab View Controller-->
+        <!--On the Map Tab View Controller-->
         <scene sceneID="OwF-ef-sYT">
             <objects>
-                <tabBarController storyboardIdentifier="OntheMapTabViewController" id="Sae-Ve-8fv" customClass="OntheMapTabViewController" customModule="OnTheMapV1_TestA" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="OntheMapTabViewController" id="Sae-Ve-8fv" userLabel="On the Map Tab View Controller" customClass="OntheMapTabViewController" customModule="OnTheMapV1_TestA" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NQw-CW-wd0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
