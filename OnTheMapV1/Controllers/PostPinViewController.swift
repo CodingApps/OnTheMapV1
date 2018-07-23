@@ -1,6 +1,6 @@
 //
-//  SubmitLocationPin.swift
-//  OnTheMapV1-TestA
+//  PostPinViewController.swift
+//  OnTheMapV1A
 //
 //  Created by Rick Mc on 7/15/18.
 //  Copyright © 2018 Rick Mc. All rights reserved.
@@ -71,9 +71,6 @@ class PostPinViewController: UIViewController,MKMapViewDelegate {
         
     }
     
-    @IBAction func cancel (_ sender : Any)  {
-        self.dismiss(animated: true, completion: nil)
-    }
     
     @IBAction func pressFinishButton(_ sender: Any) {
         activityIndicator.startAnimating()

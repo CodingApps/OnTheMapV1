@@ -1,6 +1,6 @@
 //
 //  MapListController.swift
-//  OnTheMapV1-TestA
+//  OnTheMapV1A
 //
 //  Created by Rick Mc on 7/19/18.
 //  Copyright © 2018 Rick Mc. All rights reserved.
@@ -68,7 +68,7 @@ import Foundation
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "AddLocationViewController") as! AddLocationViewController
             self.present(controller, animated: true, completion: nil)
         }   else {
-            displayAlertPop("User has already posted a student location. Would you like to OverWrite their location?")
+            displayAlertPop("User has already added a location. Would you like to overwrite?")
         }
     }
     

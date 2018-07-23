@@ -1,6 +1,6 @@
 //
-//  OnTheMapConvenience.swift
-//  OnTheMapV1-TestA
+//  UdacityOTMConvenience.swift
+//  OnTheMapV1A
 //
 //  Created by Rick Mc on 6/23/18.
 //  Copyright © 2018 Rick Mc. All rights reserved.

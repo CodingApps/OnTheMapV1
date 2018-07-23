@@ -1,6 +1,6 @@
 //
 //  ParseStudentInfo.swift
-//  OnTheMapV1-TestA
+//  OnTheMapV1A
 //
 //  Created by Rick Mc on 7/13/18.
 //  Copyright © 2018 Rick Mc. All rights reserved.

@@ -14,7 +14,7 @@
         <!--Map View Controller-->
         <scene sceneID="SfC-8o-2vL">
             <objects>
-                <viewController id="LgM-Bo-mfV" customClass="MapViewController" customModule="OnTheMapV1_TestA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LgM-Bo-mfV" customClass="MapViewController" customModule="OnTheMapV1A" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFill" id="LhN-dQ-YP2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,7 +70,7 @@
         <!--Add Location View Controller-->
         <scene sceneID="S8Z-zZ-ZwW">
             <objects>
-                <viewController storyboardIdentifier="AddLocationViewController" id="AxF-Tr-Yls" customClass="AddLocationViewController" customModule="OnTheMapV1_TestA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddLocationViewController" id="AxF-Tr-Yls" customClass="AddLocationViewController" customModule="OnTheMapV1A" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1aR-ON-5pi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,7 +118,7 @@
         <!--Post Pin View Controller-->
         <scene sceneID="U0N-h2-Lbf">
             <objects>
-                <viewController restorationIdentifier="PostPinViewController" storyboardIdentifier="PostPinViewController" id="H0p-Z7-kJh" customClass="PostPinViewController" customModule="OnTheMapV1_TestA" sceneMemberID="viewController">
+                <viewController restorationIdentifier="PostPinViewController" storyboardIdentifier="PostPinViewController" id="H0p-Z7-kJh" customClass="PostPinViewController" customModule="OnTheMapV1A" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F5g-Sq-geB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,7 +141,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="pressFinishButton:" destination="H0p-Z7-kJh" eventType="touchUpInside" id="6CN-Rk-HB3"/>
+                                    <action selector="pressFinishButton:" destination="H0p-Z7-kJh" eventType="touchUpInside" id="zUI-09-9Dp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -149,7 +149,6 @@
                         <viewLayoutGuide key="safeArea" id="C1U-jU-XDK"/>
                     </view>
                     <connections>
-                        <outlet property="finishButton" destination="C46-ya-0Jr" id="XEb-gC-iA6"/>
                         <outlet property="mapView" destination="EyE-9h-xW4" id="6mn-v1-hf7"/>
                     </connections>
                 </viewController>
@@ -160,7 +159,7 @@
         <!--Login-->
         <scene sceneID="wO6-DL-PRU">
             <objects>
-                <viewController id="lhO-bi-Ezz" userLabel="Login" customClass="LoginViewController" customModule="OnTheMapV1_TestA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lhO-bi-Ezz" userLabel="Login" customClass="LoginViewController" customModule="OnTheMapV1A" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LZn-K3-Jtk"/>
                         <viewControllerLayoutGuide type="bottom" id="y8u-JI-3Cu"/>
@@ -251,13 +250,13 @@
         <!--Map List Controller-->
         <scene sceneID="ZfU-4Y-KF8">
             <objects>
-                <tableViewController storyboardIdentifier="MapListController" id="06P-2Y-D1d" customClass="MapListController" customModule="OnTheMapV1_TestA" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MapListController" id="06P-2Y-D1d" customClass="MapListController" customModule="OnTheMapV1A" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6oX-V3-vmM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapListCell" rowHeight="102" id="BpQ-vd-dZq" customClass="MapListCell" customModule="OnTheMapV1_TestA" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapListCell" rowHeight="102" id="BpQ-vd-dZq" customClass="MapListCell" customModule="OnTheMapV1A" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="102"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BpQ-vd-dZq" id="Bm3-FU-fDl">

@@ -1,6 +1,6 @@
 //
 //  MapViewController.swift
-//  OnTheMapV1-TestA
+//  OnTheMapV1A
 //
 //  Created by Rick Mc on 7/14/18.
 //  Copyright © 2018 Rick Mc. All rights reserved.
@@ -158,7 +158,7 @@ class MapViewController: UIViewController,MKMapViewDelegate {
                 
             else
             {
-                self.displayAlertPop("User has already added a location. Would you like to OverWrite?")
+                self.displayAlertPop("User has already added a location. Would you like to overwrite?")
                 
             }
         }

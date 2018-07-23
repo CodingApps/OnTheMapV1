@@ -19,7 +19,7 @@
 		D9B84ECD20FAA7AF00B30E2F /* StudentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B84ECC20FAA7AF00B30E2F /* StudentInfo.swift */; };
 		D9B84ED320FAE41600B30E2F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B84ED220FAE41600B30E2F /* MapViewController.swift */; };
 		D9B84ED520FB36A400B30E2F /* AddLocationPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B84ED420FB36A400B30E2F /* AddLocationPin.swift */; };
-		D9B84ED720FB3ABC00B30E2F /* PostPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B84ED620FB3ABC00B30E2F /* PostPinViewController.swift */; };
+		D9C2D1582105D98A006AA363 /* PostPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B84ED620FB3ABC00B30E2F /* PostPinViewController.swift */; };
 		D9D3E71120F8929A00AC5064 /* ParseStudentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D3E71020F8929A00AC5064 /* ParseStudentInfo.swift */; };
 		D9E6F78720CCA86A00AC4D37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E6F78620CCA86A00AC4D37 /* AppDelegate.swift */; };
 		D9E6F78920CCA86A00AC4D37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E6F78820CCA86A00AC4D37 /* ViewController.swift */; };
@@ -219,11 +219,11 @@
 			files = (
 				D9E6F78920CCA86A00AC4D37 /* ViewController.swift in Sources */,
 				D9B6B8F02101A2130085A75D /* MapListController.swift in Sources */,
+				D9C2D1582105D98A006AA363 /* PostPinViewController.swift in Sources */,
 				D9B84EC920FAA6BA00B30E2F /* Constants.swift in Sources */,
 				D97FE30820DEED2E0031A3B6 /* LoginController.swift in Sources */,
 				D9B84ECB20FAA76E00B30E2F /* UserInfo.swift in Sources */,
 				D97FE30D20DEFD8B0031A3B6 /* UdacityOTMConvenience.swift in Sources */,
-				D9B84ED720FB3ABC00B30E2F /* PostPinViewController.swift in Sources */,
 				D9B84EC720FAA54400B30E2F /* GCDBlackBox.swift in Sources */,
 				D97FE30B20DEFD710031A3B6 /* UdacityOTMClient.swift in Sources */,
 				D9E6F78720CCA86A00AC4D37 /* AppDelegate.swift in Sources */,
@@ -383,7 +383,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Techmode.OnTheMapV1-TestA";
+				PRODUCT_BUNDLE_IDENTIFIER = Techmode.OnTheMapV1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -401,7 +401,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Techmode.OnTheMapV1-TestA";
+				PRODUCT_BUNDLE_IDENTIFIER = Techmode.OnTheMapV1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

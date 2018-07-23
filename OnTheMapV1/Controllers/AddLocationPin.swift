@@ -1,6 +1,6 @@
 //
 //  AddLocationPin.swift
-//  OnTheMapV1-TestA
+//  OnTheMapV1A
 //
 //  Created by Rick Mc on 7/15/18.
 //  Copyright © 2018 Rick Mc. All rights reserved.
@@ -15,12 +15,6 @@ class AddLocationViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var location: UITextField!
     @IBOutlet weak var link: UITextField!
     
-    
-    
-    @IBAction func cancel ( _ sender : Any)
-    {
-        self.dismiss(animated: true, completion: nil)
-    }
     
     @IBAction func findLocation (_ sender : Any)
     {
