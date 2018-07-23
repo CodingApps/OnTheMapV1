@@ -52,6 +52,12 @@ class LoginViewController: UIViewController,UINavigationControllerDelegate ,UITe
         
     }
     
+    @IBAction func signUpPressed( _ sender : Any)
+    {
+        let url = URL(string : "https://auth.udacity.com/sign-up")
+        UIApplication.shared.open(url!)
+    }
+    
     func displayActivityIndicator()
     {
         activityIndicator.center = self.view.center
