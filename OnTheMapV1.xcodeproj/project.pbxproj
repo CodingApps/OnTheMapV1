@@ -43,7 +43,7 @@
 		D9B84ED420FB36A400B30E2F /* AddLocationPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationPin.swift; sourceTree = "<group>"; };
 		D9B84ED620FB3ABC00B30E2F /* PostPinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPinViewController.swift; sourceTree = "<group>"; };
 		D9D3E71020F8929A00AC5064 /* ParseStudentInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseStudentInfo.swift; sourceTree = "<group>"; };
-		D9E6F78320CCA86A00AC4D37 /* OnTheMapV1-TestA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OnTheMapV1-TestA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9E6F78320CCA86A00AC4D37 /* OnTheMapV1A.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnTheMapV1A.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E6F78620CCA86A00AC4D37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9E6F78820CCA86A00AC4D37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D9E6F78B20CCA86A00AC4D37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		D9E6F77A20CCA86A00AC4D37 = {
 			isa = PBXGroup;
 			children = (
-				D9E6F78520CCA86A00AC4D37 /* OnTheMapV1-TestA */,
+				D9E6F78520CCA86A00AC4D37 /* OnTheMapV1 */,
 				D9E6F78420CCA86A00AC4D37 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,12 +126,12 @@
 		D9E6F78420CCA86A00AC4D37 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D9E6F78320CCA86A00AC4D37 /* OnTheMapV1-TestA.app */,
+				D9E6F78320CCA86A00AC4D37 /* OnTheMapV1A.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D9E6F78520CCA86A00AC4D37 /* OnTheMapV1-TestA */ = {
+		D9E6F78520CCA86A00AC4D37 /* OnTheMapV1 */ = {
 			isa = PBXGroup;
 			children = (
 				D9D3E70E20F891F300AC5064 /* Controllers */,
@@ -143,15 +143,15 @@
 				D9E6F78F20CCA86B00AC4D37 /* LaunchScreen.storyboard */,
 				D9E6F79220CCA86B00AC4D37 /* Info.plist */,
 			);
-			path = "OnTheMapV1-TestA";
+			path = OnTheMapV1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D9E6F78220CCA86A00AC4D37 /* OnTheMapV1-TestA */ = {
+		D9E6F78220CCA86A00AC4D37 /* OnTheMapV1A */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9E6F79520CCA86B00AC4D37 /* Build configuration list for PBXNativeTarget "OnTheMapV1-TestA" */;
+			buildConfigurationList = D9E6F79520CCA86B00AC4D37 /* Build configuration list for PBXNativeTarget "OnTheMapV1A" */;
 			buildPhases = (
 				D9E6F77F20CCA86A00AC4D37 /* Sources */,
 				D9E6F78020CCA86A00AC4D37 /* Frameworks */,
@@ -161,9 +161,9 @@
 			);
 			dependencies = (
 			);
-			name = "OnTheMapV1-TestA";
+			name = OnTheMapV1A;
 			productName = "OnTheMapV1-TestA";
-			productReference = D9E6F78320CCA86A00AC4D37 /* OnTheMapV1-TestA.app */;
+			productReference = D9E6F78320CCA86A00AC4D37 /* OnTheMapV1A.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -181,7 +181,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D9E6F77E20CCA86A00AC4D37 /* Build configuration list for PBXProject "OnTheMapV1-Test" */;
+			buildConfigurationList = D9E6F77E20CCA86A00AC4D37 /* Build configuration list for PBXProject "OnTheMapV1" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -194,7 +194,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D9E6F78220CCA86A00AC4D37 /* OnTheMapV1-TestA */,
+				D9E6F78220CCA86A00AC4D37 /* OnTheMapV1A */,
 			);
 		};
 /* End PBXProject section */
@@ -411,7 +411,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D9E6F77E20CCA86A00AC4D37 /* Build configuration list for PBXProject "OnTheMapV1-Test" */ = {
+		D9E6F77E20CCA86A00AC4D37 /* Build configuration list for PBXProject "OnTheMapV1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9E6F79320CCA86B00AC4D37 /* Debug */,
@@ -420,7 +420,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9E6F79520CCA86B00AC4D37 /* Build configuration list for PBXNativeTarget "OnTheMapV1-TestA" */ = {
+		D9E6F79520CCA86B00AC4D37 /* Build configuration list for PBXNativeTarget "OnTheMapV1A" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9E6F79620CCA86B00AC4D37 /* Debug */,
