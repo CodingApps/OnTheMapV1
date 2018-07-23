@@ -87,7 +87,7 @@ import Foundation
         
         if let firstname = info.firstName,let  lastname = info.lastName{
             cell.name.text = "User : \(firstname)"+" "+"\(lastname)"
-            cell.URL.text =  "Site : \(info.mediaURL!)"
+            cell.URL.text =  info.mediaURL
         }
         return cell
     }
