@@ -214,6 +214,9 @@ class MapViewController: UIViewController,MKMapViewDelegate {
         
     }
     
+    @IBAction func logOutButton(_ sender: Any) {
+                    self.dismiss(animated: false, completion: nil)
+    }
     
     
 }

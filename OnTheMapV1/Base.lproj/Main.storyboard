@@ -39,6 +39,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="jx2-dM-CZ4">
                         <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="CMF-br-2Bz">
+                            <connections>
+                                <action selector="logOutButton:" destination="LgM-Bo-mfV" id="HD7-6o-WF7"/>
+                            </connections>
+                        </barButtonItem>
                         <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="On The Map - Map View" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="Q9v-nU-9Dt">
                             <rect key="frame" x="84" y="7" width="207" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -308,6 +313,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="qIQ-np-jeX" customClass="MapListCell">
                         <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="fqn-Id-MYe">
+                            <connections>
+                                <action selector="logOutButton:" destination="06P-2Y-D1d" id="N4S-C1-J3P"/>
+                            </connections>
+                        </barButtonItem>
                         <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="On The Map - Table View" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="IVD-iN-s8B">
                             <rect key="frame" x="85.5" y="7" width="204" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

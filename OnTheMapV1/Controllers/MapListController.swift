@@ -128,5 +128,9 @@ import Foundation
         self.present(alert, animated: true, completion: nil)
     }
     
+    @IBAction func logOutButton(_ sender: Any) {
+        self.dismiss(animated: false, completion: nil)
+    }
+    
     
 }
