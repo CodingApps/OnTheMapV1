@@ -44,13 +44,18 @@ class PostPinViewController: UIViewController,MKMapViewDelegate {
             
             
             if let error = error {
+                performUIUpdatesOnMain {
+                    
                 self.activityIndicator.stopAnimating()
                 
                 let alert = UIAlertController(title: "Location not found", message: "Location not Found", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
                     alert.dismiss(animated: true, completion: nil)
                     self.navigationController?.popViewController(animated: true)}))
+                    self.present(alert, animated: true)
             }
+                
+        }
             
             if let mapItems = response?.mapItems{
                 if let mapLocation = mapItems.first{
@@ -71,43 +76,30 @@ class PostPinViewController: UIViewController,MKMapViewDelegate {
                 self.activityIndicator.stopAnimating()
             }
             }})
-        
     }
     
     
     @IBAction func pressFinishButton(_ sender: Any) {
         activityIndicator.startAnimating()
-        if(userInformation.objectID == nil){
-                ParseClient.sharedInstance().postStudentInformation()
-                    {
+        if userInformation.objectID == nil {
+                ParseClient.sharedInstance().postStudentInformation() {
                         (success,result,error) in
                         self.activityIndicator.stopAnimating()
-                        if(error !=  nil)
-                        {
-                            print("Error posting location")
+                        if error !=  nil {
                             self.displayAlert("Error", "Error POSTING request", "Dismiss")
                         } else {
                             userInformation.objectID = result?["objectId"] as! String
-                            print(userInformation.objectID)
-                            debugPrint("Posted successfully")
                             performUIUpdatesOnMain {
                                 self.navigationController?.popToRootViewController(animated: true)
                             }
                         }
                     }
-                }
-            
-        else
-        {
-            ParseClient.sharedInstance().putStudentInformation()
-                    {
+                } else {
+            ParseClient.sharedInstance().putStudentInformation() {
                         (success,error) in
-                        if(error !=  nil)
-                        {
-                            print("Error posting location")
+                if error !=  nil {
                             self.displayAlert("Error", "Error Postig request", "Dismiss")
                         } else {
-                            print("Posted(PUT) successfully")
                             performUIUpdatesOnMain {
                                 self.navigationController?.popToRootViewController(animated: true)
                             }
