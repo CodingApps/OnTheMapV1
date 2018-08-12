@@ -23,7 +23,7 @@ class PostPinViewController: UIViewController,MKMapViewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        self.tabBarController?.tabBar.isHidden = true
+        tabBarController?.tabBar.isHidden = true
     }
     
     override func viewDidLoad() {
@@ -45,8 +45,11 @@ class PostPinViewController: UIViewController,MKMapViewDelegate {
             
             if let error = error {
                 self.activityIndicator.stopAnimating()
-                self.finishButton.isEnabled = false
-                self.displayAlert("Location not found", "Location not Found", "OK")
+                
+                let alert = UIAlertController(title: "Location not found", message: "Location not Found", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                    alert.dismiss(animated: true, completion: nil)
+                    self.navigationController?.popViewController(animated: true)}))
             }
             
             if let mapItems = response?.mapItems{
@@ -75,8 +78,6 @@ class PostPinViewController: UIViewController,MKMapViewDelegate {
     @IBAction func pressFinishButton(_ sender: Any) {
         activityIndicator.startAnimating()
         if(userInformation.objectID == nil){
-            performUIUpdatesOnMain {
-                
                 ParseClient.sharedInstance().postStudentInformation()
                     {
                         (success,result,error) in
@@ -89,17 +90,16 @@ class PostPinViewController: UIViewController,MKMapViewDelegate {
                             userInformation.objectID = result?["objectId"] as! String
                             print(userInformation.objectID)
                             debugPrint("Posted successfully")
-                            self.navigationController?.popToRootViewController(animated: true)
+                            performUIUpdatesOnMain {
+                                self.navigationController?.popToRootViewController(animated: true)
+                            }
                         }
+                    }
                 }
-            }
-        }
             
         else
         {
-            performUIUpdatesOnMain {
-                
-                ParseClient.sharedInstance().putStudentInformation()
+            ParseClient.sharedInstance().putStudentInformation()
                     {
                         (success,error) in
                         if(error !=  nil)
@@ -108,16 +108,13 @@ class PostPinViewController: UIViewController,MKMapViewDelegate {
                             self.displayAlert("Error", "Error Postig request", "Dismiss")
                         } else {
                             print("Posted(PUT) successfully")
-                            self.navigationController?.popToRootViewController(animated: true)
-//
-  //                          performUIUpdatesOnMain {
-    //                            self.navigationController?.popToRootViewController(animated: true)
-      //                    }
+                            performUIUpdatesOnMain {
+                                self.navigationController?.popToRootViewController(animated: true)
+                            }
                         }
+                    }
                 }
             }
-        }
-    }
     
     func displayAlert(_ title : String, _ message : String , _ action : String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)

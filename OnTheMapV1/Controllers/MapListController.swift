@@ -129,8 +129,16 @@ import Foundation
     }
     
     @IBAction func logOutButton(_ sender: Any) {
-        self.dismiss(animated: false, completion: nil)
-    }
+        performUIUpdatesOnMain {
+            UdacityOTMClient.sharedInstance().logOutFunction { (data, error) in
+                if error == nil
+                    {
+                        performUIUpdatesOnMain {
+                            self.dismiss(animated: true, completion: nil)
+                        }
+                    }
     
-    
+                }
+            }
+        }
 }

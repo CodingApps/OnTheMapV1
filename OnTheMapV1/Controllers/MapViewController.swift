@@ -25,7 +25,7 @@ class MapViewController: UIViewController,MKMapViewDelegate {
         callstudentInformation()
         ParseClient.sharedInstance().getStudentInformation({ (success, result, error) in
             
-            if(success == false){
+            if !success {
                 self.displayErrorAlert(error!)
                 
             }
@@ -147,19 +147,12 @@ class MapViewController: UIViewController,MKMapViewDelegate {
     @IBAction func addLocation(_ sender: Any) {
         performUIUpdatesOnMain {
             
-            
-            
-        if(userInformation.objectID == nil){
-            
+        if userInformation.objectID == nil {
                 let controller = self.storyboard?.instantiateViewController(withIdentifier: "AddLocationViewController") as! AddLocationViewController
                 self.navigationController?.pushViewController(controller, animated: true)
               
-            }
-                
-            else
-            {
+            } else {
                 self.displayAlertPop("User has already added a location. Would you like to overwrite?")
-                
             }
         }
     }
@@ -215,8 +208,32 @@ class MapViewController: UIViewController,MKMapViewDelegate {
     }
     
     @IBAction func logOutButton(_ sender: Any) {
-                    self.dismiss(animated: false, completion: nil)
-    }
+            performUIUpdatesOnMain {
+                UdacityOTMClient.sharedInstance().logOutFunction { (data, error) in
+                    if error == nil
+                        {
+                        performUIUpdatesOnMain {
+                            self.dismiss(animated: true, completion: nil)
+                        }
+                    }
+                    
+                }
+            }
+        }
+        
+        
+        
+        
+//                performUIUpdatesOnMain {
+//
+//                    UdacityOTMClient.sharedInstance().logOutFunction(data, error) in
+//                    performUIUpdatesOnMain {
+//                        self.dismiss(animated: true, completion: nil)
+//                    }
+//                 //   self.dismiss(animated: false, completion: nil)
+//
+//        }
+//    }
     
     
 }
