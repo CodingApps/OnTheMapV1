@@ -1,11 +1,11 @@
 <h1 align="center"> On The Map </h1> <br>
 
-<h4 align="center">Search for map entries containing saved URL's</h4> <br>
+<h4 align="center">View map entries containing saved URL's</h4> <br>
  
 
 ## Intro
 
-This project allows you to select pins on a map loaded via a server API and then load them via an external browser. Login is with API and links can be added. 
+This project allows you to view pins loaded from an API onto a map view. Each of the pins has a URL assigned to it. You can then tap on them to view the URL via an external browser. Login is with API and links can be added. 
 
 
 ## Functions 
