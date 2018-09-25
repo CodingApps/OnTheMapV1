@@ -21,7 +21,7 @@ class MapViewController: UIViewController,MKMapViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
-        self.tabBarController?.tabBar.isHidden = false
+        tabBarController?.tabBar.isHidden = false
         callstudentInformation()
         ParseClient.sharedInstance().getStudentInformation({ (success, result, error) in
             
