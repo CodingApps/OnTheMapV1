@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D90EBD602159F6790038CA6B /* onthemap1.gif in Resources */ = {isa = PBXBuildFile; fileRef = D90EBD5F2159F6780038CA6B /* onthemap1.gif */; };
 		D97FE30B20DEFD710031A3B6 /* UdacityOTMClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97FE30A20DEFD710031A3B6 /* UdacityOTMClient.swift */; };
 		D97FE30D20DEFD8B0031A3B6 /* UdacityOTMConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97FE30C20DEFD8B0031A3B6 /* UdacityOTMConvenience.swift */; };
 		D98F4F7D20F892C300E46B24 /* ParseStudentConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F4F7C20F892C300E46B24 /* ParseStudentConvenience.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D90EBD5F2159F6780038CA6B /* onthemap1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = onthemap1.gif; path = screenshots/onthemap1.gif; sourceTree = SOURCE_ROOT; };
 		D97FE30A20DEFD710031A3B6 /* UdacityOTMClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityOTMClient.swift; sourceTree = "<group>"; };
 		D97FE30C20DEFD8B0031A3B6 /* UdacityOTMConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityOTMConvenience.swift; sourceTree = "<group>"; };
 		D98F4F7C20F892C300E46B24 /* ParseStudentConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseStudentConvenience.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D90EBD5E2159F6320038CA6B /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				D90EBD5F2159F6780038CA6B /* onthemap1.gif */,
+			);
+			path = screenshots;
+			sourceTree = "<group>";
+		};
 		D97FE30920DEFD390031A3B6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +144,7 @@
 				D9D3E70E20F891F300AC5064 /* Controllers */,
 				D9963B4220F1C900002787C2 /* View */,
 				D97FE30920DEFD390031A3B6 /* Model */,
+				D90EBD5E2159F6320038CA6B /* screenshots */,
 				D9E6F78A20CCA86A00AC4D37 /* Main.storyboard */,
 				D9B84EC620FAA54400B30E2F /* GCDBlackBox.swift */,
 				D9E6F78D20CCA86B00AC4D37 /* Assets.xcassets */,
@@ -203,6 +214,7 @@
 			files = (
 				D9E6F79120CCA86B00AC4D37 /* LaunchScreen.storyboard in Resources */,
 				D9E6F78E20CCA86B00AC4D37 /* Assets.xcassets in Resources */,
+				D90EBD602159F6790038CA6B /* onthemap1.gif in Resources */,
 				D9E6F78C20CCA86A00AC4D37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
