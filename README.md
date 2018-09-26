@@ -18,5 +18,5 @@ This project allows you to view pins loaded from an API onto a map view. Each of
 
 
 Some good articles for tips : <br>
-● <a href="https://www.techrepublic.com/blog/software-engineer/create-your-own-web-service-for-an-ios-app-part-one/">Create your own web service for an iOS app - Part One</a> <br>
-● <a href="https://blog.supereasyapps.com/30-auto-layout-best-practices/#layout-ui-for-one-iphone">30 Auto Layout Best Practices</a>
+* <a href="https://www.techrepublic.com/blog/software-engineer/create-your-own-web-service-for-an-ios-app-part-one/">Create your own web service for an iOS app - Part One</a> <br>
+* <a href="https://blog.supereasyapps.com/30-auto-layout-best-practices/#layout-ui-for-one-iphone">30 Auto Layout Best Practices</a>
