@@ -16,6 +16,46 @@ This project allows you to view pins loaded from an API onto a map view. Each of
 * Save data to server with API
 * Load URL's with external browser
 
+ <quote>   func markPins(_ studentinfo : [studentInformation], _ refresh : Int)
+    {
+        performUIUpdatesOnMain {
+            if(refresh == 1)
+            {
+                let annotationRefresh = self.mapView.annotations
+                
+                for i in annotationRefresh{
+                    self.mapView.removeAnnotation(i)
+                }
+                print ("annotations removed after refresh")
+            }
+            
+        }
+        
+        for student in studentinfo
+        {
+            if  let latitude = student.latitude,let longitude = student.longitude{
+                let lat = CLLocationDegrees(latitude)
+                let long = CLLocationDegrees(longitude)
+                
+                let coordinate =   CLLocationCoordinate2D(latitude: lat, longitude: long)
+                
+                if let firstName = student.firstName,let lastName = student.lastName
+                {
+                    let annotation = MKPointAnnotation()
+                    annotation.coordinate = coordinate
+                    annotation.title = "\(firstName) \(lastName)"
+                    annotation.subtitle = student.mediaURL
+                    
+                    annotations.append(annotation)
+                }
+            }
+        }
+        performUIUpdatesOnMain {
+            self.mapView.addAnnotations(self.annotations)
+        }
+    }
+    </quote>
+
 
 Some good articles for tips : <br>
 * <a href="https://www.techrepublic.com/blog/software-engineer/create-your-own-web-service-for-an-ios-app-part-one/">Create your own web service for an iOS app - Part One</a> <br>
