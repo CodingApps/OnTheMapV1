@@ -10,7 +10,7 @@ This project allows you to view pins loaded from an API onto a map view. After s
 <p align="center">
   <img alt="onthemap" title="onthemap" src="screenshots/onthemap1.gif" width=300>
 </p>
-
+<br>
 ## Functions 
 
 * Sign-in to app using host API.
@@ -18,7 +18,7 @@ This project allows you to view pins loaded from an API onto a map view. After s
 * Mapview controller to display pins. 
 * Load URL's with external browser.
 * Toggle between MapView and TableView.
-
+<br>
 ## Methods on the Main Thread
 
 An interesting part of the MapView controller was updating the UI when pins were loaded. Several classes had to use the "performUIUpdatesonMain" method to call a UI update on the main thread.  This was because API calls would run on a background thread, so UI updates had to be specified as running on the main thread. 
@@ -60,10 +60,10 @@ func markPins(_ studentinfo : [studentInformation], _ refresh : Int)
         }
     }
 ```
-
+<br>
 ## Article Tips
 
-Some good articles for tips : <br><br>
+Some good articles for tips : <br>
 * <a href="https://www.techrepublic.com/blog/software-engineer/create-your-own-web-service-for-an-ios-app-part-one/">Create your own web service for an iOS app - Part One</a> <br>
 * <a href="https://www.hackingwithswift.com/example-code/location/how-to-add-annotations-to-mkmapview-using-mkpointannotation-and-mkpinannotationview">How to add annotations to MKMapView</a> <br>
 * <a href="https://www.yudiz.com/working-with-unwind-segues-in-swift">Working with Segue unwinds in Swift</a><br>
