@@ -23,7 +23,7 @@ This project allows you to view pins loaded from an API onto a map view. After s
 
 ## Methods on the Main Thread
 
-An interesting part of the MapView controller was updating the UI when pins were loaded. Several classes had to use the "performUIUpdatesonMain" method to call a UI update on the main thread.  This was because API calls would run on a background thread, so UI updates had to be specified as running on the main thread. 
+An interesting part of the MapView controller was updating the UI when pins were loaded. Several functions had to use the "performUIUpdatesonMain" method to call a UI update on the main thread.  This was because API calls would run on a background thread, so UI updates had to be specified as running on the main thread. 
 
 ``` swift
 func markPins(_ studentinfo : [studentInformation], _ refresh : Int)
