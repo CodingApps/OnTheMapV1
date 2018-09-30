@@ -67,7 +67,7 @@ func markPins(_ studentinfo : [studentInformation], _ refresh : Int)
 ## Article Tips
 
 Some good articles for tips : <br>
-* <a href="https://www.techrepublic.com/blog/software-engineer/create-your-own-web-service-for-an-ios-app-part-one/">Create your own web service for an iOS app - Part One</a> <br>
-* <a href="https://www.hackingwithswift.com/example-code/location/how-to-add-annotations-to-mkmapview-using-mkpointannotation-and-mkpinannotationview">How to add annotations to MKMapView</a> <br>
-* <a href="https://www.yudiz.com/working-with-unwind-segues-in-swift">Working with Segue unwinds in Swift</a><br>
-* <a href="https://blog.supereasyapps.com/30-auto-layout-best-practices/#layout-ui-for-one-iphone">30 Auto Layout Best Practices</a>
+* <a href="https://www.techrepublic.com/blog/software-engineer/create-your-own-web-service-for-an-ios-app-part-one/" target="_blank">Create your own web service for an iOS app - Part One</a> <br>
+* <a href="https://www.hackingwithswift.com/example-code/location/how-to-add-annotations-to-mkmapview-using-mkpointannotation-and-mkpinannotationview" target="_blank">How to add annotations to MKMapView</a> <br>
+* <a href="https://www.yudiz.com/working-with-unwind-segues-in-swift" target="_blank">Working with Segue unwinds in Swift</a><br>
+* <a href="https://blog.supereasyapps.com/30-auto-layout-best-practices/#layout-ui-for-one-iphone" target="_blank">30 Auto Layout Best Practices</a>
