@@ -17,7 +17,7 @@ This project allows you to view pins loaded from an API onto a map view. Each of
 * Load URL's with external browser
 
 
-``` 
+``` swift
 
 func markPins(_ studentinfo : [studentInformation], _ refresh : Int)
     {
