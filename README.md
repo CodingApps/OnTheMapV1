@@ -1,6 +1,6 @@
 <h1 align="center"> On The Map </h1> <br>
 
-<h4 align="center">View map entries containing saved URL's</h4> <br>
+<h4 align="center">View map showing pins, which can be selected to display site URL's.</h4> <br>
  
 
 ## Intro
@@ -66,5 +66,5 @@ func markPins(_ studentinfo : [studentInformation], _ refresh : Int)
 Some good articles for tips : <br><br>
 * <a href="https://www.techrepublic.com/blog/software-engineer/create-your-own-web-service-for-an-ios-app-part-one/">Create your own web service for an iOS app - Part One</a> <br>
 * <a href="https://www.hackingwithswift.com/example-code/location/how-to-add-annotations-to-mkmapview-using-mkpointannotation-and-mkpinannotationview">How to add annotations to MKMapView</a> <br>
-* <a href-"https://www.yudiz.com/working-with-unwind-segues-in-swift/">Working with Segue unwinds in Swift</a><br>
+* <a href="https://www.yudiz.com/working-with-unwind-segues-in-swift">Working with Segue unwinds in Swift</a><br>
 * <a href="https://blog.supereasyapps.com/30-auto-layout-best-practices/#layout-ui-for-one-iphone">30 Auto Layout Best Practices</a>
