@@ -5,7 +5,7 @@
 
 ## Intro
 
-This project allows you to view pins loaded from an API onto a map view. Each of the pins has a URL assigned to it. You can then tap on them to view the URL via an external browser. Login is with API and links can be added. 
+This project allows you to view pins loaded from an API onto a map view. After signing in, current pins will load onto the the map with URL's assigned. You can then tap on them to view the URL via an external browser.  
 
 <p align="center">
   <img alt="onthemap" title="onthemap" src="screenshots/onthemap1.gif" width=300>
@@ -13,14 +13,15 @@ This project allows you to view pins loaded from an API onto a map view. Each of
 
 ## Functions 
 
-* Sign-in to app using host API
+* Sign-in to app using host API.
 * API controllers to load user pins and post user pin.  
 * Mapview controller to display pins. 
-* Load URL's with external browser
+* Load URL's with external browser.
+* Toggle between MapView and TableView.
 
 ## Methods on the Main Thread
 
-An interesting part of the Mapview controller was updating the UI when pins were loaded. Several methods had to use the "performUIUpdatesonMain" method to call a UI update on the main thread.  This was because API calls would run on a background thread, so UI updates had to be specified as running on the main thread. 
+An interesting part of the MapView controller was updating the UI when pins were loaded. Several classes had to use the "performUIUpdatesonMain" method to call a UI update on the main thread.  This was because API calls would run on a background thread, so UI updates had to be specified as running on the main thread. 
 
 ``` swift
 func markPins(_ studentinfo : [studentInformation], _ refresh : Int)
@@ -60,7 +61,10 @@ func markPins(_ studentinfo : [studentInformation], _ refresh : Int)
     }
 ```
 
+## Article Tips
 
-Some good articles for tips : <br>
+Some good articles for tips : <br><br>
 * <a href="https://www.techrepublic.com/blog/software-engineer/create-your-own-web-service-for-an-ios-app-part-one/">Create your own web service for an iOS app - Part One</a> <br>
+* <a href="https://www.hackingwithswift.com/example-code/location/how-to-add-annotations-to-mkmapview-using-mkpointannotation-and-mkpinannotationview">How to add annotations to MKMapView</a> <br>
+* <a href-"https://www.yudiz.com/working-with-unwind-segues-in-swift/">Working with Segue unwinds in Swift</a><br>
 * <a href="https://blog.supereasyapps.com/30-auto-layout-best-practices/#layout-ui-for-one-iphone">30 Auto Layout Best Practices</a>
