@@ -12,13 +12,17 @@ This project allows you to view pins loaded from an API onto a map view. Each of
 </p>
 
 ## Functions 
-* Login with site API
-* Save data to server with API
+
+* Sign-in to app using host API
+* API controllers to load user pins and post user pin.  
+* Mapview controller to display pins. 
 * Load URL's with external browser
 
+## Methods on the Main Thread
+
+An interesting part of the Mapview controller was updating the UI when pins were loaded. Several methods had to use the "performUIUpdatesonMain" method to call a UI update on the main thread.  This was because API calls would run on a background thread, so UI updates had to be specified as running on the main thread. 
 
 ``` swift
-
 func markPins(_ studentinfo : [studentInformation], _ refresh : Int)
     {
         performUIUpdatesOnMain {
@@ -30,16 +34,14 @@ func markPins(_ studentinfo : [studentInformation], _ refresh : Int)
                     self.mapView.removeAnnotation(i)
                 }
                 print ("annotations removed after refresh")
-            }
-            
+            }           
         }
         
         for student in studentinfo
         {
             if  let latitude = student.latitude,let longitude = student.longitude{
                 let lat = CLLocationDegrees(latitude)
-                let long = CLLocationDegrees(longitude)
-                
+                let long = CLLocationDegrees(longitude)               
                 let coordinate =   CLLocationCoordinate2D(latitude: lat, longitude: long)
                 
                 if let firstName = student.firstName,let lastName = student.lastName
@@ -47,8 +49,7 @@ func markPins(_ studentinfo : [studentInformation], _ refresh : Int)
                     let annotation = MKPointAnnotation()
                     annotation.coordinate = coordinate
                     annotation.title = "\(firstName) \(lastName)"
-                    annotation.subtitle = student.mediaURL
-                    
+                    annotation.subtitle = student.mediaURL               
                     annotations.append(annotation)
                 }
             }
@@ -57,7 +58,6 @@ func markPins(_ studentinfo : [studentInformation], _ refresh : Int)
             self.mapView.addAnnotations(self.annotations)
         }
     }
-    
 ```
 
 
