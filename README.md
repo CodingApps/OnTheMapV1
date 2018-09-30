@@ -54,7 +54,6 @@ This project allows you to view pins loaded from an API onto a map view. Each of
             self.mapView.addAnnotations(self.annotations)
         }
     }
-    </quote>
 
 
 Some good articles for tips : <br>
