@@ -16,7 +16,10 @@ This project allows you to view pins loaded from an API onto a map view. Each of
 * Save data to server with API
 * Load URL's with external browser
 
- <quote>   func markPins(_ studentinfo : [studentInformation], _ refresh : Int)
+
+``` 
+
+func markPins(_ studentinfo : [studentInformation], _ refresh : Int)
     {
         performUIUpdatesOnMain {
             if(refresh == 1)
@@ -54,6 +57,8 @@ This project allows you to view pins loaded from an API onto a map view. Each of
             self.mapView.addAnnotations(self.annotations)
         }
     }
+    
+```
 
 
 Some good articles for tips : <br>
