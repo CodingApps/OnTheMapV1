@@ -5,7 +5,7 @@
 
 ## Intro
 
-This project allows you to view pins loaded from an API onto a map view. After signing in, current pins will load onto the the map with URL's assigned. You can then tap on them to view the URL via an external browser.  
+This project allows you to view pins loaded from an API onto a map view. After signing in, current pins will load onto the  map with URL's assigned. You can then tap on them to view the URL via an external browser.  
 
 <p align="center">
   <img alt="onthemap" title="onthemap" src="screenshots/onthemap1.gif" width=300>
